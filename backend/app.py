@@ -20,8 +20,14 @@ app.config["MONGO_URI"]      = os.getenv("MONGO_URI", "mongodb://localhost:27017
 app.config["JWT_SECRET_KEY"] = os.getenv("JWT_SECRET_KEY", "fallback-secret-change-this")
 
 # ── Extensions ─────────────────────────────────────────────────────────────────
-CORS(app, origins=["http://localhost:5173", "http://127.0.0.1:5173"])
-JWTManager(app)
+CORS(
+    app,
+    origins=[
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
+        "https://mindstreak-omega.vercel.app"
+    ]
+)JWTManager(app)
 mongo.init_app(app)
 
 # ── Blueprints ─────────────────────────────────────────────────────────────────
