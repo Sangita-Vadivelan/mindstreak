@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const BASE_URL = import.meta.env.VITE_API_URL || 'https://mindstreak-backend.onrender.com'
+const BASE_URL = import.meta.env.VITE_API_URL || 'https://mindstreak-backend.onrender.com/api'
 
 // ── Axios instance ─────────────────────────────────────────────────────────────
 const client = axios.create({ baseURL: BASE_URL })
