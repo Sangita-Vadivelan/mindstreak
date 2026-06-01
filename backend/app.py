@@ -27,7 +27,9 @@ CORS(
         "http://127.0.0.1:5173",
         "https://mindstreak-omega.vercel.app"
     ]
-)JWTManager(app)
+)
+
+JWTManager(app)
 mongo.init_app(app)
 
 # ── Blueprints ─────────────────────────────────────────────────────────────────
