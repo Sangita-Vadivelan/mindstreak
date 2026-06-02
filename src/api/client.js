@@ -30,8 +30,8 @@ export default client
 
 // ── Auth ───────────────────────────────────────────────────────────────────────
 export const authAPI = {
-  register: (data) => client.post('/api/auth/register', data),
-  login:    (data) => client.post('/api/auth/login', data),
+  register: (data) => client.post('/auth/register', data),
+  login:    (data) => client.post('/auth/login', data),
   me:       ()     => client.get('/auth/me'),
 }
 
